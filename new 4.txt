@@ -1,0 +1,2 @@
+SELECT * FROM `products` WHERE item_id=(SELECT MAX(item_id) FROM `products`);
+SELECT * FROM `orders` WHERE order_id=(SELECT MAX(order_id) FROM `orders`);
